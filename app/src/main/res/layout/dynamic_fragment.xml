@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/rl"
+    android:background="@color/light_gray">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/news_item"/>
+
+    <TextView
+        android:id="@+id/tv_noNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Contents/NEWS available right now!!!"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:padding="40dp"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+
+</RelativeLayout>
